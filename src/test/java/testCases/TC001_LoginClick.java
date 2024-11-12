@@ -88,7 +88,8 @@ public class TC001_LoginClick {
 	     plp.clickFirstProduct();
 	     Thread.sleep(2000);
 	     pdp.clickAddToCart(); // Add to Cart
-	     Thread.sleep(7000);
+	     Thread.sleep(1000);
+	     pdp.clickDismissPopup();
 	     pdp.clickCartIcon(); // click on Cart Icon
 	     Thread.sleep(2000);
 	     cop.clickCheckoutButton();
@@ -146,17 +147,19 @@ public class TC001_LoginClick {
 	     //Order Success Page
 	     
 	     String confmsg = osp.getConfirmationMessage();
-	     Assert.assertEquals(confmsg, "Thank you for your orde!");
+	     Assert.assertEquals(confmsg, "Thank you for your order!");
 
 	     
    
-		/*
 		
 		//logout
-		Thread.sleep(2000);
+		Thread.sleep(3000);
+		osp.clickUserIcon();
+		osp.clickLogoutButton();
 		regpage.clickLogoutButton();
 		
-		*/
+	     
+	     
 		
 	}
 	

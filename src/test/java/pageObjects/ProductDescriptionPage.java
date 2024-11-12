@@ -20,14 +20,24 @@ public class ProductDescriptionPage {
     @FindBy(xpath = "//span[normalize-space()='Add to Cart']")
     WebElement addToCartButton;
     
+    @FindBy (xpath = "//button[@data-notify='dismiss']")
+    WebElement dismissPopup;
+    
+    
     @FindBy(xpath = "//i[@class='icon-shopping-cart']")
     WebElement cartIcon;
+    
+    
 
     // ## Action Methods ##
     
     // Method to click the "Add to Cart" button
     public void clickAddToCart() {
         addToCartButton.click();
+    }
+    
+    public void clickDismissPopup() {
+    	dismissPopup.click();
     }
     
     public void clickCartIcon() {

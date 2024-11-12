@@ -27,6 +27,13 @@ public class OrderSuccessPage {
     
     @FindBy(xpath = "//span[@class='text-medium']")
     WebElement orderNumberElement;
+    
+    // LogOut button
+    @FindBy (xpath = "//i[@class='icon-user pr-2'")
+    WebElement userIcon;
+    
+	@FindBy (xpath = "//a[normalize-space()='Logout']")
+	WebElement logoutButton;
 
 	
 
@@ -51,6 +58,19 @@ public class OrderSuccessPage {
         
      
     }
+    
+    // User Icon
+    
+    public void clickUserIcon() {
+    	userIcon.click();
+    }
+    
+    // Logout Button
+    
+    public void clickLogoutButton() {
+    	logoutButton.click();
+    }
+    
    
 	
 
