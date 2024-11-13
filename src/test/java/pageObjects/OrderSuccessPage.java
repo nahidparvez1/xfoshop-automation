@@ -29,10 +29,14 @@ public class OrderSuccessPage {
     WebElement orderNumberElement;
     
     // LogOut button
-    @FindBy (xpath = "//i[@class='icon-user pr-2'")
-    WebElement userIcon;
+  //  @FindBy(className = "icon-user")
     
-	@FindBy (xpath = "//a[normalize-space()='Logout']")
+    @FindBy(xpath = "//i[@class='icon-user pr-2']")
+    WebElement userIcon;
+
+    
+   // @FindBy(linkText = "Logout")
+    @FindBy (xpath = "//a[normalize-space()='Logout']")
 	WebElement logoutButton;
 
 	

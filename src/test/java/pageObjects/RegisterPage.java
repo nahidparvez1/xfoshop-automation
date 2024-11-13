@@ -64,10 +64,10 @@ public class RegisterPage {
 	// Logout Locators
 	
 	
-	@FindBy (linkText = "Log out")
-	WebElement lnkLogout;
-	
-	
+//	@FindBy (linkText = "Log out")
+//	WebElement lnkLogout;
+//	
+//	
 
 	
 	
@@ -123,19 +123,19 @@ public class RegisterPage {
 	
 	//Logout - Methods
 	
-	 public void clickLogoutButton() {
-	        // Scroll the page to bring the logout button into view
-	        JavascriptExecutor js = (JavascriptExecutor) driver;
-	        js.executeScript("arguments[0].scrollIntoView(true);", lnkLogout); // Scroll to the logout button
-	        
-	        
-	        // Adding explicit wait to ensure the button is clickable
-	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
-	        wait.until(ExpectedConditions.elementToBeClickable(lnkLogout));
-	        
-	        js.executeScript("arguments[0].click();", lnkLogout);
-	    }
-	
+//	 public void clickLogoutButton() {
+//	        // Scroll the page to bring the logout button into view
+//	        JavascriptExecutor js = (JavascriptExecutor) driver;
+//	        js.executeScript("arguments[0].scrollIntoView(true);", lnkLogout); // Scroll to the logout button
+//	        
+//	        
+//	        // Adding explicit wait to ensure the button is clickable
+//	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+//	        wait.until(ExpectedConditions.elementToBeClickable(lnkLogout));
+//	        
+//	        js.executeScript("arguments[0].click();", lnkLogout);
+//	    }
+//	
 	
 	
 	

@@ -152,11 +152,10 @@ public class TC001_LoginClick {
 	     
    
 		
-		//logout
-		Thread.sleep(3000);
+		//logout after all process
+		Thread.sleep(15000);
 		osp.clickUserIcon();
 		osp.clickLogoutButton();
-		regpage.clickLogoutButton();
 		
 	     
 	     
